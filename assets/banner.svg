@@ -1,0 +1,156 @@
+<svg width="1600" height="420" viewBox="0 0 1600 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+  <!-- Background -->
+  <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="420" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#050B17"/>
+    <stop offset="0.5" stop-color="#071A3D"/>
+    <stop offset="1" stop-color="#020617"/>
+  </linearGradient>
+
+  <!-- Blue glow -->
+  <radialGradient id="glow1" cx="0" cy="0" r="1"
+    gradientUnits="userSpaceOnUse"
+    gradientTransform="translate(1250 100) rotate(90) scale(260)">
+    <stop stop-color="#2563EB" stop-opacity="0.35"/>
+    <stop offset="1" stop-color="#2563EB" stop-opacity="0"/>
+  </radialGradient>
+
+  <!-- Cyan glow -->
+  <radialGradient id="glow2" cx="0" cy="0" r="1"
+    gradientUnits="userSpaceOnUse"
+    gradientTransform="translate(300 360) rotate(90) scale(260)">
+    <stop stop-color="#06B6D4" stop-opacity="0.22"/>
+    <stop offset="1" stop-color="#06B6D4" stop-opacity="0"/>
+  </radialGradient>
+
+  <!-- Grid -->
+  <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+    <path d="M50 0H0V50" stroke="#FFFFFF" stroke-opacity="0.035"/>
+  </pattern>
+
+  <!-- Blur -->
+  <filter id="blur">
+    <feGaussianBlur stdDeviation="35"/>
+  </filter>
+
+  <!-- Glow -->
+  <filter id="softGlow">
+    <feGaussianBlur stdDeviation="5"/>
+  </filter>
+
+</defs>
+
+<!-- Base -->
+<rect width="1600" height="420" fill="url(#bg)"/>
+
+<!-- Grid -->
+<rect width="1600" height="420" fill="url(#grid)"/>
+
+<!-- Atmospheric glow -->
+<rect width="1600" height="420" fill="url(#glow1)"/>
+<rect width="1600" height="420" fill="url(#glow2)"/>
+
+<!-- Abstract AI network -->
+
+<g opacity="0.65">
+
+  <!-- Connections -->
+  <path d="M1080 80 L1210 145 L1370 80 L1500 180"
+        stroke="#38BDF8"
+        stroke-opacity="0.18"/>
+
+  <path d="M1210 145 L1260 280 L1420 250 L1500 180"
+        stroke="#60A5FA"
+        stroke-opacity="0.15"/>
+
+  <path d="M1260 280 L1150 350 L1010 290"
+        stroke="#22D3EE"
+        stroke-opacity="0.14"/>
+
+  <path d="M1370 80 L1420 250"
+        stroke="#3B82F6"
+        stroke-opacity="0.16"/>
+
+</g>
+
+<!-- Nodes -->
+
+<g>
+
+  <circle cx="1080" cy="80" r="4" fill="#38BDF8"/>
+  <circle cx="1210" cy="145" r="6" fill="#60A5FA"/>
+  <circle cx="1370" cy="80" r="4" fill="#22D3EE"/>
+  <circle cx="1500" cy="180" r="5" fill="#38BDF8"/>
+  <circle cx="1260" cy="280" r="5" fill="#60A5FA"/>
+  <circle cx="1420" cy="250" r="4" fill="#22D3EE"/>
+  <circle cx="1150" cy="350" r="4" fill="#38BDF8"/>
+  <circle cx="1010" cy="290" r="4" fill="#60A5FA"/>
+
+</g>
+
+<!-- Soft node glows -->
+
+<g filter="url(#softGlow)" opacity="0.35">
+  <circle cx="1210" cy="145" r="10" fill="#3B82F6"/>
+  <circle cx="1260" cy="280" r="10" fill="#06B6D4"/>
+  <circle cx="1500" cy="180" r="10" fill="#38BDF8"/>
+</g>
+
+<!-- Vertical accent -->
+
+<rect x="95" y="90" width="4" height="210" rx="2" fill="#38BDF8"/>
+
+<!-- Small label -->
+
+<text x="135" y="120"
+      fill="#7DD3FC"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="15"
+      letter-spacing="4">
+  ARTIFICIAL INTELLIGENCE
+</text>
+
+<!-- Main name -->
+
+<text x="135" y="195"
+      fill="white"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="64"
+      font-weight="700">
+  Midhul Binsal
+</text>
+
+<!-- Role -->
+
+<text x="138" y="235"
+      fill="#CBD5E1"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="22"
+      letter-spacing="1">
+  AI / ML ENGINEER  •  PYTHON  •  GENERATIVE AI
+</text>
+
+<!-- Bottom statement -->
+
+<text x="138" y="285"
+      fill="#94A3B8"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="17">
+  Building intelligent systems that turn ideas into real-world products.
+</text>
+
+<!-- Bottom line -->
+
+<rect x="135" y="320" width="420" height="1" fill="#38BDF8" fill-opacity="0.35"/>
+
+<text x="135" y="350"
+      fill="#64748B"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="13"
+      letter-spacing="2">
+  MACHINE LEARNING  /  COMPUTER VISION  /  LLMs  /  AI SYSTEMS
+</text>
+
+</svg>
